@@ -11,7 +11,7 @@ namespace Inventory.Managment.Application._Data.Config
             builder.HasOne(T => T.Product).WithMany();
             builder.Property(T => T.Quantity).IsRequired();
             builder.Property(T => T.UserId).IsRequired();
-            builder.Property(T => T.TotalAmount).IsRequired();
+            builder.Property(T => T.TotalAmount).IsRequired().HasColumnType("decimal(10,2)");
         }
     }
 }

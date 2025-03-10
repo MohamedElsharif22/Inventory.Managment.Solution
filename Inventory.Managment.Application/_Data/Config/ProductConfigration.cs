@@ -9,7 +9,7 @@ namespace Inventory.Managment.Application._Data.Config
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.Property(P => P.Name).IsRequired().HasColumnType("nvarchar(100)");
-            builder.Property(P => P.Description).IsRequired().HasColumnType("NVARCHAR");
+            builder.Property(P => P.Description).IsRequired().HasColumnType("nvarchar(Max)");
             builder.Property(P => P.Price).IsRequired().HasColumnType("decimal(10,2)");
             builder.Property(P => P.Supplier).HasMaxLength(100);
             builder.Property(P => P.CreatedAt).HasColumnType("datetimeoffset");

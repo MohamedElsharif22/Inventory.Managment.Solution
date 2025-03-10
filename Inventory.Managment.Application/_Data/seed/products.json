@@ -1,0 +1,82 @@
+﻿[
+  {
+    "Name": "Smartphone",
+    "Description": "Latest model with high-resolution display",
+    "Price": 799.99,
+    "CategoryId": 1,
+    "QuantityInStock": 50,
+    "Supplier": "TechCorp"
+  },
+  {
+    "Name": "Laptop",
+    "Description": "Powerful laptop for work and gaming",
+    "Price": 1299.99,
+    "CategoryId": 1,
+    "QuantityInStock": 30,
+    "Supplier": "CompuWorld"
+  },
+  {
+    "Name": "Headphones",
+    "Description": "Wireless noise-canceling headphones",
+    "Price": 199.99,
+    "CategoryId": 1,
+    "QuantityInStock": 100,
+    "Supplier": "AudioTech"
+  },
+  {
+    "Name": "T-Shirt",
+    "Description": "100% cotton comfortable T-shirt",
+    "Price": 19.99,
+    "CategoryId": 2,
+    "QuantityInStock": 200,
+    "Supplier": "FashionCo"
+  },
+  {
+    "Name": "Jeans",
+    "Description": "Slim-fit blue jeans",
+    "Price": 49.99,
+    "CategoryId": 2,
+    "QuantityInStock": 150,
+    "Supplier": "DenimWear"
+  },
+  {
+    "Name": "Refrigerator",
+    "Description": "Double-door energy-efficient refrigerator",
+    "Price": 999.99,
+    "CategoryId": 3,
+    "QuantityInStock": 20,
+    "Supplier": "HomeApplia"
+  },
+  {
+    "Name": "Microwave Oven",
+    "Description": "Convection microwave with smart settings",
+    "Price": 299.99,
+    "CategoryId": 3,
+    "QuantityInStock": 35,
+    "Supplier": "KitchenTech"
+  },
+  {
+    "Name": "Novel: The Lost City",
+    "Description": "A thrilling mystery novel",
+    "Price": 14.99,
+    "CategoryId": 4,
+    "QuantityInStock": 120,
+    "Supplier": "BookHouse"
+  },
+  {
+    "Name": "Dumbbells Set",
+    "Description": "Adjustable weight dumbbells for workouts",
+    "Price": 89.99,
+    "CategoryId": 5,
+    "QuantityInStock": 60,
+    "Supplier": "FitGear"
+  },
+  {
+    "Name": "Basketball",
+    "Description": "Professional-grade leather basketball",
+    "Price": 29.99,
+    "CategoryId": 5,
+    "QuantityInStock": 80,
+    "Supplier": "SportPro"
+  }
+]

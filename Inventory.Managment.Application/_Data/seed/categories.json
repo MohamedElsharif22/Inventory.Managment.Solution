@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Name": "Electronics",
+    "Description": "Devices, gadgets, and accessories"
+  },
+  {
+    "Name": "Clothing",
+    "Description": "Men's and women's fashion wear"
+  },
+  {
+    "Name": "Home Appliances",
+    "Description": "Appliances and tools for home use"
+  },
+  {
+    "Name": "Books",
+    "Description": "Educational and fictional books"
+  },
+  {
+    "Name": "Sports Equipment",
+    "Description": "Gear and accessories for sports and fitness"
+  }
+]
