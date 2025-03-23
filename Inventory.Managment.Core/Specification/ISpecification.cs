@@ -1,7 +1,7 @@
 ﻿using Inventory.Managment.Core.Entities;
 using System.Linq.Expressions;
 
-namespace Inventory.Managment.Core.Specificarion
+namespace Inventory.Managment.Core.Specification
 {
     public interface ISpecification<T> where T : BaseEntity
     {

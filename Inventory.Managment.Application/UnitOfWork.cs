@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace Inventory.Managment.Application
 {
-    public class UnirOfWork(InventoryDbContext context) : IUnitOfWork
+    public sealed class UnitOfWork(InventoryDbContext context) : IUnitOfWork
     {
         private readonly InventoryDbContext _context = context;
 
@@ -25,7 +25,7 @@ namespace Inventory.Managment.Application
 
         public IGenericRepository<TEntity>? Repository<TEntity>() where TEntity : BaseEntity
         {
-            var key = typeof(TEntity).Name;
+            string key = typeof(TEntity).Name;
             if (!_repositories.ContainsKey(key))
             {
                 var repo = new GenericRepository<TEntity>(_context);

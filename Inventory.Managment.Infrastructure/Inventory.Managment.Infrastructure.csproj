@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Inventory.Managment.Application\Inventory.Managment.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ProductService\" />
-  </ItemGroup>
-
 </Project>

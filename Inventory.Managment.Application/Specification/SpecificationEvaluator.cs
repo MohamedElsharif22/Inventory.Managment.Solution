@@ -1,5 +1,5 @@
 ﻿using Inventory.Managment.Core.Entities;
-using Inventory.Managment.Core.Specificarion;
+using Inventory.Managment.Core.Specification;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventory.Managment.Application.Specification

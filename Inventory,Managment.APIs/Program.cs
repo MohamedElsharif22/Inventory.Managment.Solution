@@ -1,3 +1,4 @@
+using Inventory.Managment.APIs.Endpoints;
 using Inventory.Managment.APIs.Extentions;
 using Scalar.AspNetCore;
 
@@ -10,7 +11,11 @@ namespace Inventory.Managment.APIs
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+
             builder.Services.AddDatabasesServices(builder.Configuration);
+            builder.Services.AddApplicationServices();
+            builder.Services.AddAuthenticationServices();
             builder.Services.AddAuthorization();
 
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -21,9 +26,13 @@ namespace Inventory.Managment.APIs
 
 
 
+
+
             var app = builder.Build();
 
             await app.MigrateAndSeedDatebasesAsync();
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -34,6 +43,8 @@ namespace Inventory.Managment.APIs
                 app.UseSwaggerUI();
 
             }
+
+            app.MapProductEndpoints();
 
             app.UseHttpsRedirection();
 

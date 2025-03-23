@@ -1,6 +1,12 @@
-﻿using Inventory.Managment.Application._Data;
+﻿using Inventory.Managment.Application;
+using Inventory.Managment.Application._Data;
 using Inventory.Managment.Application._Identity;
+using Inventory.Managment.Core;
+using Inventory.Managment.Core.Services.Contract;
+using Inventory.Managment.Infrastructure;
+using Microsoft.AspNetCore.Http.Json;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace Inventory.Managment.APIs.Extentions
 {
@@ -24,11 +30,19 @@ namespace Inventory.Managment.APIs.Extentions
 
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.Configure<JsonOptions>(options =>
+            {
+                options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
+
+            services.AddScoped<IProductService, ProductService>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
 
 
-        public static IServiceCollection AddAuthenticartionServices(this IServiceCollection services)
+        public static IServiceCollection AddAuthenticationServices(this IServiceCollection services)
         {
             return services;
         }
